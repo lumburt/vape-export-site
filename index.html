@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Your Company",
+  "url": "https://yourdomain.com",
+  "logo": "https://yourdomain.com/logo.png"
+}
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VapeGlobal | Professional Vape Manufacturer & Exporter</title>
+    <meta name="description" content="ISO9001 Certified Vape Manufacturer - OEM/ODM Disposable Vapes & Pod Systems">
+    <!-- SEO Meta -->
+    <meta name="keywords" content="disposable vape manufacturer, vape wholesale, OEM vape, vape exporter">
+    <link rel="canonical" href="https://www.yourdomain.com">
+    <!-- 核心样式 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- 第三方资源 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="assets/images/banners/main-banner.jpg" as="image">
+</head>
+
+<body>
+    <!-- 年龄验证弹窗 -->
+    <div id="ageGate" class="age-gate">
+        <div class="age-content">
+            <h2>Age Verification</h2>
+            <p>You must be at least 21 years old to enter</p>
+            <div class="age-buttons">
+                <button onclick="verifyAge(true)">I'm over 21</button>
+                <button onclick="verifyAge(false)">I'm under 21</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 顶部通知栏 -->
+    <div class="top-bar">
+        <div class="container">
+            <span><i class="fas fa-check-circle"></i> MOQ 1000pcs</span>
+            <span><i class="fas fa-clock"></i> Lead Time: 15 Days</span>
+            <div class="lang-switcher">
+                <select id="languageSelect">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="ru">Русский</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- 智能导航栏 -->
+    <nav class="smart-nav">
+        <div class="container">
+            <a href="/" class="brand">
+                <img src="assets/images/logo.png" alt="VapeGlobal" width="180">
+            </a>
+            <div class="nav-right">
+                <ul class="main-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li class="mega-menu">
+                        <a href="#products">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="mega-content">
+                            <div class="mega-column">
+                                <h4>Disposable Series</h4>
+                                <ul>
+                                    <li><a href="products.html#5000">5000 Puffs</a></li>
+                                    <li><a href="products.html#8000">8000 Puffs</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <h4>Pod Systems</h4>
+                                <ul>
+                                    <li><a href="products.html#closed">Closed Pod</a></li>
+                                    <li><a href="products.html#open">Open Pod</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-column">
+                                <img src="assets/images/menu-banner.jpg" alt="Product Menu">
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="oem.html">OEM Service</a></li>
+                    <li><a href="#cert">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="#cart" class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 动态Banner区 -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('assets/images/banners/banner1.jpg')">
+                <div class="slide-content">
+                    <h1 data-aos="fade-up">2024 New Arrival</h1>
+                    <p data-aos="fade-up" data-aos-delay="200">15000 Puffs Mesh Coil Technology</p>
+                    <a href="#products" class="cta-btn" data-aos="fade-up" data-aos-delay="400">Explore Now</a>
+                </div>
+            </div>
+            <!-- 更多幻灯片... -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="pagination-dots"></div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- 产品展示区 -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="product-grid">
+                <!-- 产品卡片... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- OEM服务模块 -->
+    <section class="oem-process">
+        <div class="container">
+            <h2 class="section-title">OEM Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h4>Requirement Analysis</h4>
+                    <p>Discuss your specific needs</p>
+                </div>
+                <!-- 更多步骤... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 实时聊天 -->
+    <div class="chat-widget">
+        <div class="chat-header">
+            <i class="fas fa-comments"></i> Live Chat
+        </div>
+        <!-- 聊天内容... -->
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Factory</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 VapeGlobal. All rights reserved.</p>
+            <div class="payment-icons">
+                <img src="assets/icons/visa.png" alt="Visa">
+                <img src="assets/icons/mastercard.png" alt="Mastercard">
+            </div>
+        </div>
+    </footer>
+
+    <!-- 脚本区 -->
+    <script src="js/main.js"></script>
+    <script src="js/form-handler.js"></script>
+    <script src="js/cart-system.js"></script>
+    
+    <!-- 运营集成 -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXX');
+    </script>
+
+    <!-- Stripe支付 -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+      const stripe = Stripe('pk_live_xxxxxxxxxxxxxx');
+    </script>
+
+    <!-- 实时聊天 -->
+    <script src="//code.tidio.co/xxxxxxxxxx.js" async></script>
+</body>
+</html>
